@@ -1,0 +1,148 @@
+{
+  "main": {
+    "id": "43766e251060ff1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e855e1fffab3192a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Readme.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0654df86b20571c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bc4257a2e0a048d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b0015f7305ef2a2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "71170e5d9d538919",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7b1c787d14d213b2",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "086177136c8b5cdb",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fc09808e737ccb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c0180fb409b5efc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Readme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1d9cec152a83565c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Readme.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "831fc5d9dbeb23d3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e4a7a1752612656e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Readme.md"
+              }
+            }
+          },
+          {
+            "id": "c290f7a5149a6d85",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8b0015f7305ef2a2",
+  "lastOpenFiles": [
+    "Minutes of Meetings.md",
+    "Readme.md",
+    "Docs/Week 1/Introduction.md",
+    "Resources/Resources.md",
+    "Resources/Lab 01.png",
+    "Resources/EECS-2011-62.pdf"
+  ]
+}
