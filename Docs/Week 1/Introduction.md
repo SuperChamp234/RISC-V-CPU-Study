@@ -1,9 +1,10 @@
 # Logic Gates
 
-![[Pasted image 20220817200558.png | Might not be visible in Dark Mode]]
+![](https://i.imgur.com/TomJj3X.png)
 Might not be visible in Dark Mode
 
-![[Pasted image 20220817200617.png]]
+![](https://i.imgur.com/je5QUQ0.png)
+
 Full Adder circuit
 
 ## TL - Verilog Syntax
@@ -20,7 +21,7 @@ TL-Verilog is an indentation sensitive! Each Indentation is three spaces wide.
 -   Must be composed of tokens delimited by underscores, tokens consisting of lower case alphabets and ending with zero or multiple digits.
 -   Must begin with at least 2 or more alphabetic characters.
 
-![[Pasted image 20220817200910.png | {width=50%}]]
+![](https://i.imgur.com/XdIya9l.png)
 
 ### Vectors
 
