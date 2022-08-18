@@ -1,36 +1,3 @@
-# Logic Gates
-
-![](https://i.imgur.com/TomJj3X.png)
-Might not be visible in Dark Mode
-
-![](https://i.imgur.com/je5QUQ0.png)
-
-Full Adder circuit
-
-## TL - Verilog Syntax
-
-Parenthesis can be used to group expressions into more complex logic functions.
-
-If a statement is extended across multiple lines, then these lines should have more indentation than the first line.
-
-TL-Verilog is an indentation sensitive! Each Indentation is three spaces wide.
-
-### Signal Name Regulations
-
--   Must start with `$`
--   Must be composed of tokens delimited by underscores, tokens consisting of lower case alphabets and ending with zero or multiple digits.
--   Must begin with at least 2 or more alphabetic characters.
-
-![](https://i.imgur.com/XdIya9l.png)
-
-### Vectors
-
-A collection of `N` wires can hold $2^N$ possible values. We can also hold the sign of the vector innit.
-
-Operations like `+, -, >, == , <` can be performed on them.
-
----
-
 # Introduction to RISC-V Architecture
 
 ## Base Model
