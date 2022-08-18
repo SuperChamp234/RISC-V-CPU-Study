@@ -7,7 +7,7 @@ Might not be visible in Dark Mode
 
 Full Adder circuit
 
-## TL - Verilog Syntax
+## TL – Verilog Syntax
 
 Parenthesis can be used to group expressions into more complex logic functions.
 
@@ -37,7 +37,7 @@ Which is a 4-bit vector.
 
 ### Multiplexers
 
-With multiplexors, one can select between two signals with the help of a select line which is used to identify the two signals.
+With multiplexers, one can select between two signals with the help of a select line which is used to identify the two signals.
 ![](https://i.imgur.com/IbTGTK2.png ) ![](https://i.imgur.com/TZC4n5N.png)
 Multiplexer and Multiplexer Circuit.
 > The MUX depicted in the "Two-way single-bit multiplexer" graphic above can be constructed from basic logic gates, as seen below. We might read this implementation as "assert the output if X1 is asserted and selected (by **S == 1**) OR X2 is asserted and selected (by **S == 0**)".
@@ -71,7 +71,7 @@ Refer to third resource in [[Resources]] document.
 
 ### Concatenation
 
-Two vectors can be concatnated to form another vector. 
+Two vectors can be concatenated to form another vector. 
 Syntax 👇
 `$word[15:0] = {$upper_byte, $lower_byte};`
 
@@ -130,3 +130,40 @@ Syntax 👇
 \SV
    // Back to SystemVerilog context to end the module.
    endmodule```
+
+
+---
+### Flip Flops
+
+The flip flop's value changes with the change in the applied input. Depending on behaviour to different change, flip flops are divided into different categories.  We are only concerned with D-flip-flop for now.
+
+##### D-Flip-Flop
+
+In this type of Flip Flop, the output changes at the clock's edge, and if the input changes at other times, the output is unaffected.
+
+![](https://i.imgur.com/lNpOVA8.png)
+
+![](https://i.imgur.com/O81hJoa.png)
+Truth table for flip-flop (D).
+
+As we can see that the D-Flip flop **essentially stores** the value in D signal until it is instructed by the clock to release the formation.
+Thus, a D-Flip-Flop can be used as a **Register**.
+
+#### Building a fibonacci series circuit using flip flops
+
+As flip flops basically hold a value, they can be designed to hold the previous value and thus form a series from the values of the last iteration.
+
+A fibonacci series is simply the sum of the last iteration's numbers.
+Thus, the previous values of the register can be accessed by the use of `>>n`  where `n` is the nth previous value.
+Every circuit also requires a reset signal, which resets the series back to the start. Here if we simply reset the variable's current value to 1, we'd easily have it resetted.
+
+Therefore, the code for fibonacci series is:
+```verilog
+$num[31:0] = $reset 1 : (>>1$num + >>2$num);
+```
+---
+
+Tags:
+#flip-flops #tl-verilog #syntax #multiplexers #vectors #digital-logic 
+
+---

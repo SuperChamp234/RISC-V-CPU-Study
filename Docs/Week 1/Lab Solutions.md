@@ -1,4 +1,4 @@
-## Lab - Calculator
+### Lab – Calculator
 
 ```verilog
 \m4_TLV_version 1d: tl-x.org
@@ -77,3 +77,44 @@
 
 >Full Lab with calculator module imported 
 >http://makerchip.com/sandbox/0YEf3hZw2/0oYhXrp#
+
+---
+### Lab: Recirculating Calculator
+
+```verilog
+\m4_TLV_version 1d: tl-x.org
+\SV
+
+   // =================================================
+   // Welcome!  New to Makerchip? Try the "Learn" menu.
+   // =================================================
+
+   // Default Makerchip TL-Verilog Code Template
+   
+   // Macro providing required top-level module definition, random
+   // stimulus support, and Verilator config.
+   m4_makerchip_module   // (Expanded in Nav-TLV pane.)
+	/* verilator lint_on WIDTH */
+	m4_include_lib(['https://raw.githubusercontent.com/stevehoover/LF-Building-a-RISC-V-CPU-Core/main/lib/calc_viz.tlv']). 
+\TLV
+   $reset = *reset;
+   
+   $val1[31:0] = >>1$out;
+   $val2[31:0] = {28'd0, $val2_rand[3:0]};
+   $out[31:0] = $reset ? 0 :
+      $op[1:0] == 2'b00
+         ? $val1 + $val2 :
+      /* $op == 2'b01
+         ? $val1 - $val2 : */
+      $op == 2'b10
+         ? $val1 * $val2 :
+         $val1 / $val2;
+   //...
+
+   // Assert these to end simulation (before Makerchip cycle limit).
+   *passed = *cyc_cnt > 40;
+   *failed = 1'b0;
+   m4+calc_viz()
+\SV
+   endmodule
+```

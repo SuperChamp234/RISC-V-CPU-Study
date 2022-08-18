@@ -14,3 +14,4 @@
 -   The base instructions of RISC-V are 32-bit instructions alligned to 32-bit boundaries.
     -   Such Instructions have their lowest bits set to 11. xxxxxxxxxxxxxxxx | xxxxxxxxxxxbbb11
 -   The RISC-V Encoding scheme also allows for variable length instructions, where any number of 16-bit instruction parcels are aligned on 16-bit boundaries.
+- 
