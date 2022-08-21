@@ -93,3 +93,19 @@ module xor_gate(output reg c,
 endmodule
 ```
 ---
+## D-Flip Flop
+
+```verilog
+module DFlipFlop(D,clk,Q);
+input D; 
+input clk; 
+output Q;
+always @(posedge clk) 
+begin
+ Q <= D; 
+end 
+endmodule
+```
+Flip Flop Working at the rising edge.
+
+---
