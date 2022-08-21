@@ -11,7 +11,7 @@ module andgate(
   assign c = a && b;
 
 endmodule
-```
+ ```
 AND Gate
 
 ```verilog
