@@ -159,7 +159,7 @@ Every circuit also requires a reset signal, which resets the series back to the 
 
 Therefore, the code for fibonacci series is:
 ```verilog
-$num[31:0] = $reset 1 : (>>1$num + >>2$num);
+$num[31:0] = $reset ? 1 : (>>1$num + >>2$num);
 ```
 ---
 
