@@ -11,3 +11,36 @@
 - Errors are caused when the circuit is mixed of unsynchronized sequential and combinational logic.
 - **Latching:** When the output is to be a net but to be assigned inside a sequential circuit, the output is latched in a register, and then assigned to the wire outside the sequential circuit.
 ---
+## Decode Logic
+
+![](Types-of-instructions.png)
+
+#### R-Type Instructions
+
+![R-Type](R-Type.png)
+
+#### I-Type Instructions
+
+![I-Type](I-Type.png)
+
+#### S-Type Instructions
+
+![](S-Type.png)
+
+#### B-Type Instructions
+
+![](B-Type.png)
+
+#### U-Type Instructions
+
+![](U-Type.png)
+
+#### J-Type Instructions
+
+![](J-Type.png)
+
+#### Misc.
+
+![](Misc.png)
+
+---
