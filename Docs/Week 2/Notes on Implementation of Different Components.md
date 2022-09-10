@@ -88,3 +88,23 @@
 | 37     | `ecall`  |
 | 38     | `ebreak` |
 
+### Testing Instructions
+
+| Instruction Name | HEX        | Binary                           |
+| ---------------- | ---------- | -------------------------------- |
+| addi x2, x2, 1   | 0x00110113 | 00000000000100010000000100010011 |
+| addi x1, x1, 1   | 0X00108093 | 0000 0000 0001 0000 1000 0000 1001 0011 |
+| jal x3, -4       | 0xffdff1ef | 11111111110111111111000111101111 |
+
+
+---
+## Control Unit
+
+The control unit should be able to:
+
+- Handle all JUMP instructions
+	- For `B` type instructions, set PC to required instruction as per Jump Instruction
+	- For `JAL` and `JAR` instruction, simply write to `rd` and so on(mostly ALU thing9)
+- Prepare for ALU to perform Operations
+	- Read `rs1` `rs2` and store `rd` into register file.
+- Handle all `load` and `store` instructions by itself.

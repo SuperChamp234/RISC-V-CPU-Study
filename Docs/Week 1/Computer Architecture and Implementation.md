@@ -19,11 +19,3 @@ The PC is a byte address, only referencing the first byte of the address where t
 ![](https://i.imgur.com/Cejkco3.png)
 
 ---
-### Accessing memory in RISC-V
-
-The memory can be accessed using the tag
-
-```verilog
-`READONLY_MEM($adrs,$$instr[31:0]);
-```
-
