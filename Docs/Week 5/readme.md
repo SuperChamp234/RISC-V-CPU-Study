@@ -22,3 +22,4 @@ This open-source nature of RISC-V is crucial because it allows smaller developer
 
 ## Theory
 
+RISC-V Executes
