@@ -1,4 +1,4 @@
-2## Instruction Memory
+## Instruction Memory
 
 - A note on wire vs. reg: The left-hand-side of an assign statement must be a net type (e.g., wire), while the left-hand-side of a procedural assignment (in an `always` block) must be a variable type (e.g., reg). These types (wire vs. reg) have nothing to do with what hardware is synthesized, and are just syntax left over from Verilog's use as a hardware simulation language. 
 - Non-blocking assignment statements are **allowed to be scheduled without blocking the execution of the following statements and is specified by a (`<=`) symbol**. The same symbol is used as a relational operator in expressions, and as an assignment operator in the context of a non-blocking assignment. http://www.asic-world.com/tidbits/blocking.html
@@ -54,7 +54,7 @@
 | 3      | `or`     |
 | 4      | `and`    |
 | 5      | `sll`    |
-| 6      | `srl`    |
+| 6      | `srl`    | 
 | 7      | `sra`    |
 | 8      | `slt`    |
 | 9      | `sltu`   |
@@ -104,7 +104,6 @@ The control unit should be able to:
 
 - Handle all JUMP instructions
 	- For `B` type instructions, set PC to required instruction as per Jump Instruction
-	- For `JAL` and `JAR` instruction, simply write to `rd` and so on(mostly ALU thing9)
+	- For `JAL` and `JAR` instruction, simply write to `rd` and so on (mostly ALU thing9)
 - Prepare for ALU to perform Operations
-	- Read `rs1` `rs2` and store `rd` into register file.
-- Handle all `load` and `store` instructions by itself.
+
